@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8" />
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web2</title>
+    </head>
+    <style>
+            #board {
+      position: relative;
+      width: 1000px;
+      height: 500px;
+      margin: 40px auto;
+      border: 2px solid white;
+      background-color: rgb(0, 0, 0);
+      overflow: hidden;
+    }
+    #ship {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: url("ship.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 5px;
+      top: 250px;
+    }
+    .bullets {
+      position: absolute;
+      bottom: 40px;
+      left: 51%;
+      width: 20px;
+      height: 20px;
+      background: url("bullet.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    </style>
+
+    <body>
+        
+        <div id="board">
+            <div id="ship"></div>
+        </div>
+        <script src="proc.js" defer></script>
+    </body>
+</html>
